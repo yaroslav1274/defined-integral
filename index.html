@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__box">
+            <div class="method__box">
+                <h2>Оберіть метод</h2>
+                <select name="method" id="method">
+                    <option value="midpoint">Центр. прям.</option>
+                    <option value="trapezoids">Трапецій</option>
+                    <option value="simpson">Парабол (Сімпсона)</option>
+                    <option value="monte_carlo">Монте Карло</option>
+                </select>
+            </div>
+            <div class="user_input__box">
+                <div class="user_input__eps">
+                    <label for="eps">Введіть точність Eps</label>
+                    <input type="number" name="eps" id="eps">
+                </div>
+                <div class="user_input__n">
+                    <label for="n">Введіть початкове N</label>
+                    <input type="number" name="n" id="n">
+                </div>
+            </div>
+            <div class="buttons__box">
+                <button class="calculate__btn">Обчислити</button>
+                <button class="clear__btn">Очистити</button>
+            </div>
+        </div>
+        <div class="container__box">
+            <h2>Результати</h2>
+            <div class="input__container">
+                <div class="input__box">
+                    <div class="output__midpoint">
+                        <label for="midpoint">Центр. прям.</label>
+                        <input type="number" name="midpoint" id="midpoint">
+                    </div>
+                    <div class="output__trapezoids">
+                        <label for="trapezoids">Трапеції</label>
+                        <input type="number" name="trapezoids" id="trapezoids">
+                    </div>
+                    <div class="output__simpson">
+                        <label for="simpson">Сімпсона</label>
+                        <input type="number" name="simpson" id="simpson">
+                    </div>
+                    <div class="output__monte_carlo">
+                        <label for="monte_carlo">Монте Карло</label>
+                        <input type="number" name="monte_carlo" id="monte_carlo">
+                    </div>
+                    <div class="output__exact_value">
+                        <label for="exact_value">Точне значення</label>
+                        <input type="number" name="exact_value" id="exactvalue">
+                    </div>
+                </div>
+                <div class="input__box">
+                    <div class="output__N_Pr">
+                        <label for="N_Pr">N_Pr</label>
+                        <input type="number" name="N_Pr" id="N_Pr">
+                    </div>
+                    <div class="output__N_Tr">
+                        <label for="exact_value">N_Tr</label>
+                        <input type="number" name="N_Tr" id="N_Tr">
+                    </div>
+                    <div class="output__N_Simp">
+                        <label for="exact_value">N_Simp</label>
+                        <input type="number" name="N_Simp" id="N_Simp">
+                    </div>
+                    <div class="output__N_MonteCarlo">
+                        <label for="exact_value">N_Monte</label>
+                        <input type="number" name="N_MonteCarlo" id="N_MonteCarlo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
